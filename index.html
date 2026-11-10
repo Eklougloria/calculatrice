@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Calculatrice</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="titre">Calculatrice</h1>
+
+<div class="casio">
+  <div class="haut">
+    <span class="marque">CASIO</span>
+    <div class="solaire"></div>
+  </div>
+  <p class="modele">fx-991 • CALCULATOR</p>
+
+  <input id="ecran" type="text" readonly placeholder="0">
+
+  <div class="clavier">
+    <button class="gris-fonce" onclick="effacerTout()">AC</button>
+    <button class="gris-fonce" onclick="effacerUn()">DEL</button>
+    <button class="gris-fonce" onclick="ajouter('%')">%</button>
+    <button class="gris-fonce" onclick="ajouter('÷')">÷</button>
+
+    <button onclick="ajouter('7')">7</button>
+    <button onclick="ajouter('8')">8</button>
+    <button onclick="ajouter('9')">9</button>
+    <button class="gris-fonce" onclick="ajouter('×')">×</button>
+
+    <button onclick="ajouter('4')">4</button>
+    <button onclick="ajouter('5')">5</button>
+    <button onclick="ajouter('6')">6</button>
+    <button class="gris-fonce" onclick="ajouter('-')">-</button>
+
+    <button onclick="ajouter('1')">1</button>
+    <button onclick="ajouter('2')">2</button>
+    <button onclick="ajouter('3')">3</button>
+    <button class="gris-fonce" onclick="ajouter('+')">+</button>
+
+    <button onclick="ajouter('0')">0</button>
+    <button onclick="ajouter('00')">00</button>
+    <button onclick="ajouter('.')">.</button>
+    <button class="gris-fonce" onclick="calculer()">=</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
